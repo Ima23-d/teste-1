@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background:linear-gradient(-45deg,rgb(3, 212, 3), rgb(5, 122, 5));
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;  
+}
+
+.form-box {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 560px;
+    height: 600px;
+    background-image: url(teste.jpg);
+    background-repeat: no-repeat;
+    background-size: 560px 600px;
+    box-shadow: 0 20px 40px black;   
+}
+
+.cadastro{
+    font-size: 50px;
+    padding-bottom: 10px;
+    margin: 50px;
+}
+
+input{
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+input:hover{
+    color: white;
+    background-color: rgb(10, 228, 10);
+    transform: scale(1.1);
+}
+
+.usuario{
+    font-size: 15px;
+    padding-right: 230px;
+}
+
+.email{
+    font-size: 15px;
+    padding-right: 230px;
+}
+
+.senha{
+    font-size: 15px;
+    padding-right: 230px;
+}
+
+
+.entrar{
+        font-size: 25px;
+        color: white;
+        background-color: rgb(25, 185, 19);
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        width: 300px;
+        height: 50px;
+        }
+
+.entrar:hover {
+        background-color: darkblue;
+        transform: scale(1.1);
+        }
+
+
+a{
+    color: rgba(1, 193, 252, 0.836);
+}
+.linha h1, .linha a{
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+
+    </style>
+    <div class="container"><!--divpai-->
+        <div class="form-box"><!--div filho-->
+
+            <h1 class="cadastro">Cadastro</h1><!--texto cadastro-->
+
+            <h1 class="usuario">Usuario</h1>
+            <label for="Usuario"></label>
+            <input type="text" name="name" id="name" placeholder="Digite o seu nome"><!--nome-->
+
+            <h1 class="email">Email</h1>
+            <label for="Usuario"></label>
+            <input type="text" name="email" id="email" placeholder="DIgite o seu email"><!--email-->
+
+            <h1 class="senha">Senha</h1>
+            <label for="Usuario"></label>
+            <input type="password" id="password" name="password" placeholder="Digite a sua senha">
+            
+        <div class="linha">
+            <h1>ja possui uma conta?</h1><h1><!--fazer login-->
+            <h1><a href="#">Fazer login</a></h1>
+            
+        </div>
+        <form action="pagina3.html" method="get">
+            <button type="submit" class="entrar">Entrar</button><!--botão-->
+        </form>
+        </div>
+
+    </div>
+</body>
+</html>
